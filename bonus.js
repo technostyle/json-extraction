@@ -2,7 +2,7 @@ const fs = require('fs');
 const vtbOnlineJson = require('./vtbonline.json');
 
 // console.log(JSON.parse(profileCreditCardJson));
-const keys = ['bonuses', 'credit-card-bonus-options']
+const keys = ['bonuses', 'credit-card-bonus-options', 'operationLimits']
 
 const resJson = {}
 keys.forEach(key => resJson[key] = vtbOnlineJson.subNodes[key]);
